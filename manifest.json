@@ -1,14 +1,19 @@
 {
     "manifest_version": 2,
-    "name": "90sTube",
+    "name": "snailed it! youtube edition",
     "version": "1.0",
-    "permissions": ["storage", "tabs"],
-    "host_permissions": ["https://*.youtube.com/"],
-    "description": "Simplified, retro-infused iTunes lay-out",
+    "icons": {
+        "16": "assets/snail.jpg",
+        "48": "assets/snail.jpg",
+        "128": "assets/snail.jpg"
+    },
+    "browser_action": {"default_icon": "assets/snail.jpg"},
+    "page_actions": {},
+    "description": "a youtube homepage app designed to strip away all the grabby elements. also, a snail is trying to kill you.",
     "content_scripts": [
         {
             "matches": [
-                "https://*.youtube.com/"
+                "https://www.youtube.com/"
             ],
             "js": [
                 "main.js"
