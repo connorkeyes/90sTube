@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Focus",
+    "version": "1.0",
+    "icons": {},
+    "page_actions": {},
+    "description": "A chrome extension for Youtube designed to keep the user focused while not limiting functionality.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "./main.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
