@@ -1,17 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "Focus",
+    "name": "90sTube",
     "version": "1.0",
-    "icons": {},
-    "page_actions": {},
-    "description": "A chrome extension for Youtube designed to keep the user focused while not limiting functionality.",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.youtube.com/"],
+    "description": "Simplified, retro-infused iTunes lay-out",
     "content_scripts": [
         {
             "matches": [
-                "https://www.youtube.com/*"
+                "https://*.youtube.com/"
             ],
             "js": [
-                "./main.js"
+                "main.js"
             ],
             "css": [
                 "style.css"
